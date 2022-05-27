@@ -1,0 +1,175 @@
+ * {
+  padding: 0%;
+  margin: 0%;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+  
+    background-color: #323a46;
+    min-height: 100%;
+}
+.header{
+    grid-area: header;
+    background-color: rgb(126, 2, 2);
+    
+}
+.barranav{
+    grid-area: barranav;
+    max-width: 100%;
+
+}
+.main{
+    grid-area: main;
+    background-color: rgba(255,255, 255, 0.5);
+    box-sizing: border-box;
+   font-weight: 800;
+   margin: 5px;
+   color: black;
+  
+}
+            
+.aside {
+   grid-area: aside;
+   margin: 30px;
+   color: white;
+   font-size: 18px;
+   
+}
+
+.footer{
+     grid-area: footer;
+     background-color: rgb(126, 2, 2);
+     
+    }
+.container{
+    background-image: url(./imag.pestañas/71b68584-b904-4ba2-a4f7-50b39ef2029c.jpg);
+    background-repeat: repeat;
+    background-size: 100vw 100vh;
+    display: grid;
+    grid-template: "header header header" 10%
+                    "barranav barranav barranav"7%
+                    "main  main   aside" 37%
+                    "main  main  aside" 36%
+                    "footer footer footer" 10% ;
+}
+ 
+h1{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+.aside h2{
+    text-align: center;
+    color:whitesmoke;
+}
+/*
+.carousel-inner{
+    width: 100%;
+    height: 100%;
+}*/
+.mapa{
+    
+    width: 100%;
+    height: 100%;
+}
+
+.redes{
+    display: flex;
+    justify-content: center ;
+    flex-wrap: wrap;
+}
+.aside{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.barranav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.barranav a{
+
+    float: left;
+  border-right:1px solid #bbb;
+  padding: 14px 16px;
+
+    display: block;
+  color: white;
+  text-align: center;
+  
+  text-decoration: none;
+}
+.barranav a:hover{
+    background-color: #111;
+}
+
+.main h2{
+    font-family: 'EB Garamond', serif;
+}
+.main p{
+    font-size: 17px;
+  
+}
+
+.titulo{
+    height: 80px;
+    font-family: 'Beau Rivage', cursive;
+    
+}
+#cuidados{
+    display: flex;
+    justify-content: column;
+    
+}
+.odd  {
+    background: rgba(255, 255, 255 , 0.5);
+ }
+
+#carousel{
+    max-width: max-content;
+    max-width: 500px;
+ }
+#asidenavc p {
+color: black;
+font-size: 20px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: 800;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+ .container{
+     grid-template: "header header "
+                     "barranav barranav"
+                    "main aside "
+                    "main aside"
+                    "footer footer ";
+ }   
+    
+}
+
+@media  screen and (max-width:800px){
+    .container{
+        grid-template:"header"
+                    "barranav "
+                    "main "
+                    "aside "
+                    "footer" ;
+    }
+    
+}
+
+
+
+
+
